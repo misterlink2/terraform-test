@@ -23,4 +23,4 @@ jobs:
 
       - name: secret output
         id: secret
-        run: echo "$GITHUB_CONTEXT"
+        run: echo "secrets.AWS_ACCESS_KEY_ID"
