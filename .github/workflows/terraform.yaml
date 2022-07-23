@@ -1,0 +1,14 @@
+name: "tf"
+on:
+  push:
+    paths:
+      - 'infra/**'
+  pull_request:
+jobs:
+  tf:
+    name: "tf"
+    runs-on: ubuntu-latest
+    steps:
+      - name: tf-test
+        id: tf
+        run: echo "in tf"
