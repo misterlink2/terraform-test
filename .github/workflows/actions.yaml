@@ -26,7 +26,7 @@ jobs:
 
       - name: aws-test
         id: aws
-        run: aws sts get-caller-identity
+        run: aws sts get-caller-identity --region us-east-1
 
       - name: Terraform Init
         id: init
