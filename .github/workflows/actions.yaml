@@ -8,7 +8,7 @@ jobs:
   html:
     name: "html"
     runs-on: ubuntu-latest
-
+    steps:
       - name: html-test
         id: html
         run: echo "in html"
@@ -23,7 +23,7 @@ jobs:
   tf:
     name: "tf"
     runs-on: ubuntu-latest
-
+    steps:
       - name: tf-test
         id: tf
         run: echo "in tf"
