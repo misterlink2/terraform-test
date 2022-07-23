@@ -1,33 +1,3 @@
-name: "html"
-on:
-  push:
-    paths:
-      - 'test-dir/**'
-  pull_request:
-jobs:
-  html:
-    name: "html"
-    runs-on: ubuntu-latest
-    steps:
-      - name: html-test
-        id: html
-        run: echo "in html"
-
-name: "tf"
-on:
-  push:
-    paths:
-      - 'infra/**'
-  pull_request:
-jobs:
-  tf:
-    name: "tf"
-    runs-on: ubuntu-latest
-    steps:
-      - name: tf-test
-        id: tf
-        run: echo "in tf"
-
 name: "Terraform"
 
 on:
