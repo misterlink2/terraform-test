@@ -2,7 +2,7 @@ name: "html"
 on:
   push:
     paths:
-      - 'html/**'
+      - '/html/**'
   pull_request:
 jobs:
   html:

@@ -2,7 +2,7 @@ name: "tf"
 on:
   push:
     paths:
-      - 'infra/**'
+      - '/infra/**'
   pull_request:
 jobs:
   tf:
