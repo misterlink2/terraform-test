@@ -1,8 +1,8 @@
 name: "html"
 on:
   push:
-    paths-ignore:
-      - 'infra/**'
+    paths:
+      - 'html/**'
 jobs:
   html:
     name: "html"

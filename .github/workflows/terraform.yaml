@@ -2,7 +2,7 @@ name: "tf"
 on:
   push:
     paths:
-      - '/infra/**'
+      - 'infra/**'
 jobs:
   tf:
     name: "tf"
