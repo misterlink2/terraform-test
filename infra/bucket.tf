@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "web-bucket" {
   bucket = "test-infra-bucket-austin-1"
 }
 resource "aws_s3_bucket" "web-bucket-2" {
-  bucket = "test-infra-bucket-austin-2"
+  bucket = "test-infra-bucket-austin-a"
 }
 resource "aws_s3_bucket_policy" "s3-get-policy" {
   bucket = aws_s3_bucket.test-tf-bucket.id
