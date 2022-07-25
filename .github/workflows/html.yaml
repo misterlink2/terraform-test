@@ -11,3 +11,8 @@ jobs:
       - name: html-test
         id: html
         run: echo "in html"
+
+      - name: s3 sync
+        id: html
+        working-directory: html
+        run: aws s3 sync . s3://test-infra-bucket-austin-1
