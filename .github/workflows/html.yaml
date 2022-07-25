@@ -3,7 +3,6 @@ on:
   push:
     paths-ignore:
       - 'infra/**'
-  pull_request:
 jobs:
   html:
     name: "html"
