@@ -1,6 +1,9 @@
 resource "aws_s3_bucket" "web-bucket" {
   bucket = "test-infra-bucket-austin-1"
 }
+resource "aws_s3_bucket" "web-bucket-2" {
+  bucket = "test-infra-bucket-austin-2"
+}
 resource "aws_s3_bucket_policy" "s3-get-policy" {
   bucket = aws_s3_bucket.test-tf-bucket.id
   policy = data.aws_iam_policy_document.get-object-policy.json
