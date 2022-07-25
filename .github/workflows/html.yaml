@@ -1,8 +1,8 @@
 name: "html"
 on:
   push:
-    paths:
-      - '/html/**'
+    paths-ignore:
+      - 'infra/**'
   pull_request:
 jobs:
   html:
