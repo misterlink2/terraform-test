@@ -16,7 +16,8 @@ jobs:
         id: test
         run: |
             ls
-
+            
+            
       - name: s3 sync
         id: sync
         run: pwd # echo $GITHUB_WORKSPACE
