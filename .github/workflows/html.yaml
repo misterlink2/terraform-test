@@ -7,6 +7,10 @@ jobs:
   html:
     name: "html"
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: html
     steps:
       - name: html-test
         id: test
@@ -15,5 +19,5 @@ jobs:
       - name: s3 sync
         id: sync
         run: pwd # echo $GITHUB_WORKSPACE
-        working-directory: .github
+        # working-directory: .github
         # run: aws s3 sync . s3://test-infra-bucket-austin-1
