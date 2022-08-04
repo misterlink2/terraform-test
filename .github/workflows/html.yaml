@@ -10,7 +10,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: infra
+        working-directory: $GITHUB_WORKSPACE
     steps:
       - name: html-test
         id: test
