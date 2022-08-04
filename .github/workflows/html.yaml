@@ -7,16 +7,13 @@ jobs:
   html:
     name: "htm"
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: ${{github.workspace}}/html
+
     steps:
       - name: html-test
         id: test
         run: |
             ls
-            
+        working-directory: ${{github.workspace}}/html
             
       - name: s3 sync
         id: sync
