@@ -15,5 +15,5 @@ jobs:
       - name: s3 sync
         id: sync
         working-directory: html
-        run: echo $GITHUB_WORKSPACE
+        run: pwd # echo $GITHUB_WORKSPACE
         # run: aws s3 sync . s3://test-infra-bucket-austin-1
