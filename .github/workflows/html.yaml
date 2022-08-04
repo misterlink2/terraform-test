@@ -15,7 +15,7 @@ jobs:
       - name: html-test
         id: test
         run: |
-            ls ${{github.workspace}}/html
+            ls terraform-test
 
       - name: s3 sync
         id: sync
