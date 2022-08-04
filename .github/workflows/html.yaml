@@ -5,7 +5,7 @@ on:
     #  - 'html/**'
 jobs:
   html:
-    name: "html"
+    name: "htm"
     runs-on: ubuntu-latest
     defaults:
       run:
