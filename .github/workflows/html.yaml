@@ -14,7 +14,8 @@ jobs:
     steps:
       - name: html-test
         id: test
-        run: ls
+        run: |
+            ls ${{github.workspace}}
 
       - name: s3 sync
         id: sync
