@@ -15,7 +15,7 @@ jobs:
       - name: html-test
         id: test
         run: |
-            ls
+            cd html
             
             
       - name: s3 sync
