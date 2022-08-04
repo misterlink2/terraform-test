@@ -10,7 +10,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ${{github.workspace}}
+       # working-directory: ${{github.workspace}}
     steps:
       - name: html-test
         id: test
