@@ -1,0 +1,24 @@
+name: "html"
+on:
+  push:
+   # paths:
+    #  - 'html/**'
+jobs:
+  html:
+    name: "htm"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: html
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: html-test
+        id: test
+        run: |
+            ls
+            
+      - name: s3 sync
+        id: sync
+        run: aws s3 sync . s3://test-infra-bucket-austin-1
