@@ -10,11 +10,11 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ../html
+        #working-directory: ../html
     steps:
       - name: html-test
         id: test
-        run: echo "in html"
+        run: ls
 
       - name: s3 sync
         id: sync
